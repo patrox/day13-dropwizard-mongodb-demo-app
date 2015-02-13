@@ -6,7 +6,7 @@ import javax.validation.constraints.Min;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import com.yammer.dropwizard.config.Configuration;
+import io.dropwizard.Configuration;
 
 public class Reader30Configuration extends Configuration {
 

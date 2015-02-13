@@ -1,14 +1,13 @@
 package com.shekhar.reader30;
 
 import com.mongodb.Mongo;
-import com.yammer.metrics.core.HealthCheck;
+import com.codahale.metrics.health.HealthCheck;
 
 public class MongoHealthCheck extends HealthCheck {
 
-    private Mongo mongo;
+    private final Mongo mongo;
 
     public MongoHealthCheck(Mongo mongo) {
-        super("MongoDBHealthCheck");
         this.mongo = mongo;
     }
 

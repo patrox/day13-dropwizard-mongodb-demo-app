@@ -16,14 +16,14 @@ import net.vz.mongodb.jackson.DBCursor;
 import net.vz.mongodb.jackson.JacksonDBCollection;
 
 import com.shekhar.reader30.representations.Blog;
-import com.yammer.metrics.annotation.Timed;
+import com.codahale.metrics.annotation.Timed;
 
 @Path("/blogs")
 @Produces(value = MediaType.APPLICATION_JSON)
 @Consumes(value = MediaType.APPLICATION_JSON)
 public class BlogResource {
 
-    private JacksonDBCollection<Blog, String> collection;
+    private final JacksonDBCollection<Blog, String> collection;
 
     public BlogResource(JacksonDBCollection<Blog, String> blogs) {
         this.collection = blogs;

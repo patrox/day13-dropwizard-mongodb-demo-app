@@ -1,19 +1,18 @@
 package com.shekhar.reader30;
 
 import com.mongodb.Mongo;
-import com.yammer.dropwizard.lifecycle.Managed;
+import io.dropwizard.lifecycle.Managed;
 
 public class MongoManaged implements Managed {
-    
-    private Mongo mongo;
-    
+
+    private final Mongo mongo;
+
     public MongoManaged(Mongo mongo) {
         this.mongo = mongo;
     }
 
     @Override
     public void start() throws Exception {
-
     }
 
     @Override

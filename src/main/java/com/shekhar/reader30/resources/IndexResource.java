@@ -12,13 +12,13 @@ import net.vz.mongodb.jackson.JacksonDBCollection;
 
 import com.shekhar.reader30.representations.Blog;
 import com.shekhar.reader30.views.IndexView;
-import com.yammer.dropwizard.views.View;
-import com.yammer.metrics.annotation.Timed;
+import io.dropwizard.views.View;
+import com.codahale.metrics.annotation.Timed;
 
 @Path("/")
 public class IndexResource {
 
-    private JacksonDBCollection<Blog, String> collection;
+    private final JacksonDBCollection<Blog, String> collection;
 
     public IndexResource(JacksonDBCollection<Blog, String> blogs) {
         this.collection = blogs;
