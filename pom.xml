@@ -26,6 +26,13 @@
             <version>0.7.1</version>
             <type>jar</type>
         </dependency>
+        
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-views-freemarker</artifactId>
+            <version>0.7.1</version>
+            <type>jar</type>
+        </dependency>
   	
         <dependency>
             <groupId>net.vz.mongodb.jackson</groupId>

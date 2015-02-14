@@ -36,5 +36,4 @@ public class IndexResource {
         }
         return new IndexView(blogs);
     }
-
 }
