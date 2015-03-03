@@ -1,3 +1,17 @@
-mongohost: localhost
-mongoport: 27017
-mongodb: mydb
+server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 9090
+  gzip:
+    enabled: false
+
+mongouser: heroku_app34541318
+mongopass: h1n2ap30ca3j282evjdqquv8ka
+mongohost: ds049641.mongolab.com
+mongoport: 49641
+mongodb: heroku_app34541318
+
+# mongodb://heroku_app34541318:h1n2ap30ca3j282evjdqquv8ka@ds049641.mongolab.com:49641/heroku_app34541318       
